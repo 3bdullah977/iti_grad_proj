@@ -1,0 +1,29 @@
+.popular {
+  .popular-btn {
+    background: linear-gradient(
+      0deg,
+      rgb(1, 180, 228) 0%,
+      rgb(144, 206, 161) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .popular-cards {
+    position: relative;
+    &::after {
+      content: "";
+      width: 60px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0,
+        #fff 100%
+      );
+      will-change: opacity;
+      pointer-events: none;
+    }
+  }
+}

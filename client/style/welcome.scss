@@ -1,0 +1,71 @@
+.top-part {
+  position: relative;
+  background-image: url("/public/WhatsApp\ Image\ 2023-10-30\ at\ 22.04.10_aaf7a57a.jpg");
+  background-position: center;
+  background-size: cover;
+  .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: -webkit-linear-gradient(
+      0deg,
+      rgba(0, 103, 247, 0.436) 0%,
+      rgba(0, 103, 247, 0.436) 100%
+    );
+  }
+  .context {
+    position: absolute;
+    z-index: 2;
+    .input::placeholder {
+      font-size: 1rem;
+    }
+    .search {
+      position: relative;
+      .input {
+        position: absolute;
+        overflow: hidden;
+      }
+      .button {
+        position: absolute;
+        right: 0;
+        // transform: translateY(0px);
+        background-image: -webkit-linear-gradient(
+          0deg,
+          rgb(1, 180, 228) 0%,
+          rgb(144, 206, 161) 100%
+        );
+      }
+    }
+  }
+}
+.bottom-part {
+  position: relative;
+  .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/public/WhatsApp\ Image\ 2023-10-30\ at\ 22.04.11_2b51adc8.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: brightness(0.3);
+  }
+  .context {
+    position: absolute;
+    z-index: 5;
+  }
+  h1 {
+    background-image: -webkit-linear-gradient(
+      90deg,
+      rgb(144, 206, 161) 0%,
+      rgb(1, 180, 228) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

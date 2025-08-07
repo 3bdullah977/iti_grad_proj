@@ -1,0 +1,14 @@
+.trending {
+  background: url("https://www.themoviedb.org/assets/2/v4/misc/trending-bg-39afc2a5f77e31d469b25c187814c0a2efef225494c038098d62317d923f8415.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  .trending-btn {
+    background: linear-gradient(
+      0deg,
+      rgb(1, 180, 228) 0%,
+      rgb(144, 206, 161) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

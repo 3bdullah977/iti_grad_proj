@@ -1,0 +1,43 @@
+@use "welcome.scss";
+@use "cardDescription.scss";
+@use "auth.scss";
+@use "trending.scss";
+@use "popular.scss";
+@use "navThings.scss";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(1, 180, 228) 0%,
+    #423d0f,
+    #d2d531,
+    rgb(144, 206, 161) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 20px;
+  border: transparent;
+}
+@keyframes animate-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
